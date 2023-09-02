@@ -1,0 +1,23 @@
+<div class="movie-card">
+  <img
+    class="movie-card__image"
+    src="{{poster}}"
+    alt="movie poster"
+  />
+  <div class="movie-card__info">
+    <div class="movie-card__info-title">{{titulo}}</div>
+    <div class="movie-card__info-score">{{score}}/10</div>
+  </div>
+
+  <div class="movie-card__data">
+    <div class="movie-card__data-premiere">
+        <div>Fecha de estreno</div>
+        <div>{{premiere}}</div>
+      </div>
+      <div class="movie-card__data-lasting">
+        <div>Duración</div>
+        <div>{{lasting}}</div>
+      </div>
+  </div>
+  <button (click)="emitirPrecio()">Precio</button>
+</div>

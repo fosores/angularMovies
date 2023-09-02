@@ -1,3 +1,37 @@
 <app-navbar></app-navbar>
 
+<div class="movie-container">
+  <app-movie-card
+    [titulo]="'Us'"
+    [score]="8.5"
+    [premiere]="'20/04/2020'"
+    [lasting]="'01:30:50'"
+    [poster]="
+      'https://artofthemovies.co.uk/cdn/shop/products/IMG_4154_1-780453.jpg?v=1618440300'
+    "
+    (precio)="cualEsElPrecio($event)"
+  ></app-movie-card>
+
+  <app-movie-card
+    [titulo]="'Ironman'"
+    [score]="10"
+    [premiere]="'20/11/2002'"
+    [lasting]="'02:50:34'"
+    [poster]="
+      'https://artofthemovies.co.uk/cdn/shop/products/IMG_4737_1-550469_6ad2415d-59de-4f0c-8cb7-a3f1be291340.jpg?v=1656424801'
+    "
+    (precio)="cualEsElPrecio($event)"
+  ></app-movie-card>
+  <app-movie-card
+    [titulo]="'The Boy'"
+    [score]="5"
+    [premiere]="'20/02/1999'"
+    [lasting]="'01:50:34'"
+    [poster]="
+      'https://marketplace.canva.com/EAFVCFkAg3w/1/0/1131w/canva-red-and-black-horror-movie-poster-AOBSIAmLWOs.jpg'
+    "
+    (precio)="cualEsElPrecio($event)"
+  ></app-movie-card>
+</div>
+
 <router-outlet></router-outlet>
