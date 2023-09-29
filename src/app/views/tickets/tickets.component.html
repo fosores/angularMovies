@@ -1,0 +1,12 @@
+<h1>Comentarios</h1>
+<button (click)="guardarComentario()">Agregar Comentario</button>
+<div class="container">
+  <div class="card" *ngFor="let item of comentarios">
+    <div class="card__title">
+      {{ item.title }}
+    </div>
+    <div class="card__comments">
+        {{item.body}}
+    </div>
+  </div>
+</div>

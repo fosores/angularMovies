@@ -1,0 +1,13 @@
+<div class="movie-container">
+  <app-movie-card
+    *ngFor="let pelicula of peliculas"
+    [titulo]="pelicula.titulo"
+    [score]="pelicula.rating"
+    [premiere]="pelicula.fecha_estreno"
+    [lasting]="pelicula.duracion"
+    [poster]="pelicula.imagen"
+    (precio)="cualEsElPrecio($event)"
+  ></app-movie-card>
+</div>
+
+<button (click)="filtrarLasDeTerror()">Terror</button>

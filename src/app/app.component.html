@@ -1,21 +1,8 @@
 <app-navbar></app-navbar>
+<!-- <h1 *ngIf="mostrarTitulo">Me voy a mostrar</h1> -->
 
-<div class="movie-container">
-  <app-movie-card
-    *ngFor="let pelicula of peliculas"
-    [titulo]="pelicula.titulo"
-    [score]="pelicula.rating"
-    [premiere]="pelicula.fecha_estreno"
-    [lasting]="pelicula.duracion"
-    [poster]="pelicula.imagen"
-    (precio)="cualEsElPrecio($event)"
-  ></app-movie-card>
-</div>
-
-<div class="tarjeta" *ngFor="let post of posts">
-  <div>{{ post.title }}</div>
-  <div>{{ post.url }}</div>
-  <img src="{{ post.thumbnailUrl }}" />
-</div>
+<!--LLAMAR A LA FUNCION-->
+<!-- <button (click)="desaparecerElTitulo()">Desaparecer Texto</button>
+<button (click)="mostrarElTitulo()">Mostrar Texto</button> -->
 
 <router-outlet></router-outlet>

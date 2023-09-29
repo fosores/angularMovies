@@ -9,7 +9,11 @@ export class MovieCardComponent {
   @Input() titulo: string = '';
   @Input() score: number = 0;
   @Input() premiere: string = '';
+
+  //FALSY or TRUTHY
   @Input() lasting: string = '';
+
+
   @Input() poster: string = '';
   @Output() precio = new EventEmitter<string>();
 

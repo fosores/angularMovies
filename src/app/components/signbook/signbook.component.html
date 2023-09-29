@@ -1,0 +1,24 @@
+<form [formGroup]="pais">
+    <input formControlName="pais" type="text">
+</form>
+
+<br>
+<button (click)="traerPais()">Traer Pais</button>
+<br>
+<img class="escudo" [src]="escudo" alt="escudo de armas">
+
+
+<!-- <form [formGroup]="fullName" class="signbook">
+    <input (input)="muestreNombre()" formControlName="apellido" type="text">
+    <input (change)="muestreNombre()" formControlName="nombre" type="text">
+</form>
+<button (click)="muestreNombre()">Ver Nombre</button>
+
+<form [formGroup]="seleccion" class="signbook">
+    <select (change)="muestreSeleccion()" formControlName="opciones">
+        <option value="Primer Opcion">Primer Opcion</option>
+        <option value="Segunda Opcion">Segunda Opcion</option>
+        <option value="tercer Opcion">tercer Opcion</option>
+    </select>
+</form>
+<button (click)="muestreSeleccion()">Mostrar Seleccion</button> -->
